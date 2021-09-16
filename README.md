@@ -1,4 +1,4 @@
-# scripts pour la vie quotidiene
+# scripts pour la vie quotidienne
 
 ## Batch convert video to mp3 
 
