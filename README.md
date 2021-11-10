@@ -12,3 +12,7 @@ ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" -an output.mp4
 ## youtubedl extract mp3
 
 youtube-dl --extract-audio --audio-format mp3 <video URL>
+  
+## Scale video
+  
+  ffmpeg -i input.mp4 -vf scale=$w:$h <encoding-parameters> output.mp4
