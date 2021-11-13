@@ -16,3 +16,9 @@ youtube-dl --extract-audio --audio-format mp3 <video URL>
 ## Scale video
   
   ffmpeg -i input.mp4 -vf scale=$w:$h <encoding-parameters> output.mp4
+  
+  ## freebox
+  
+  //mafreebox.freebox.fr/Disque\040dur /media/freebox cifs _netdev,rw,users,credentials=/home/pitou/.smbcredentials,iocharset=utf8,uid=1000,sec=ntlmv2,file_mode=0777,dir_mode=077
+7,vers=1.0 0 0
+
