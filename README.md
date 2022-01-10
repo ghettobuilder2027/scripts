@@ -22,3 +22,10 @@ youtube-dl --extract-audio --audio-format mp3 <video URL>
   //mafreebox.freebox.fr/Disque\040dur /media/freebox cifs _netdev,rw,users,credentials=/home/pitou/.smbcredentials,iocharset=utf8,uid=1000,sec=ntlmv2,file_mode=0777,dir_mode=077
 7,vers=1.0 0 0
 
+## change file extension batch
+  for f in *.jpeg; do
+    mv -- "$f" "${f%.jpeg}.jpg"
+done
+
+  ## batch resize
+  $ for i in $( ls *.jpg); do convert -resize 50% $i re_$i; done
