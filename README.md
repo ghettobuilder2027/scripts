@@ -30,5 +30,5 @@ done
   ## batch resize
   $ for i in $( ls *.jpg); do convert -resize 50% $i re_$i; done
  ## remove part of a name of a file
-   rename 's/re_//' *
-   vire le re_ devant tous les fichiers
+   sudo apt-get install rename
+  rename 's/foo/bar/' *
