@@ -13,6 +13,10 @@ ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" -an output.mp4
 ## timelapse from images
 ffmpeg -framerate 30 -pattern_type glob -i "folder-with-photos/*.JPG" -s:v 1440x1080 -c:v libx264 -crf 17 -pix_fmt yuv420p my-timelapse.mp4
 
+## rotate 
+ffmpeg -i in.mov -vf "transpose=1" out.mov
+
+
 ## combine video and audio
 
 ffmpeg -i INPUT_FILE.mp4 -i AUDIO.wav -c:v copy -c:a aac OUTPUT_FILE.mp4
