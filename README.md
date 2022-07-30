@@ -44,3 +44,7 @@ done
  ## remove part of a name of a file
    sudo apt-get install rename
   rename 's/foo/bar/' *
+  
+  
+  ## ssh
+  https://pimylifeup.com/raspberry-pi-ssh-keys/
