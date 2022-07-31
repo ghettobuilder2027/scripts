@@ -47,4 +47,6 @@ done
   
   
   ## ssh
+  https://linuxhint.com/ssh-using-private-key-linux/
+  
   https://pimylifeup.com/raspberry-pi-ssh-keys/
