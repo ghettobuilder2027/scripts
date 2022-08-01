@@ -50,3 +50,8 @@ done
   https://linuxhint.com/ssh-using-private-key-linux/
   
   https://pimylifeup.com/raspberry-pi-ssh-keys/
+  
+  
+  ## kill linux process by name
+   k=$(pidof vlc); kill -9 $k
+
