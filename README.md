@@ -30,6 +30,9 @@ for f in $(ls bat_*); do echo file \'$f\' >> files.txt;done
 
 ffmpeg -f concat -safe 0 -i files.txt -c copy mergedVideo.mp4
 
+Attention à l'option copy (sans réencodage)
+
+
 ## combine video and audio
 
 ffmpeg -i INPUT_FILE.mp4 -i AUDIO.wav -c:v copy -c:a aac OUTPUT_FILE.mp4
