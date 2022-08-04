@@ -28,7 +28,7 @@ t : time
 ## concatenate
 for f in $(ls bat_*); do echo file \'$f\' >> files.txt;done
 
-ffmpeg -f concat -safe 0 -i fileList.txt -c copy mergedVideo.mp4
+ffmpeg -f concat -safe 0 -i files.txt -c copy mergedVideo.mp4
 
 ## combine video and audio
 
