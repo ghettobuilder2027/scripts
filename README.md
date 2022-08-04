@@ -26,7 +26,7 @@ ffmpeg -ss 60 -i video.mp4 -t 60 -c copy cut.mp4
 t : time
 
 ## concatenate
-for f in *.mp4 ; do echo file \'$f\' >> fileList.txt;
+for f in $(ls bat_*); do echo file \'$f\' >> files.txt;done
 
 ffmpeg -f concat -safe 0 -i fileList.txt -c copy mergedVideo.mp4
 
