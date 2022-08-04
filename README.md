@@ -16,12 +16,18 @@ ffmpeg -i in.mov -vf "transpose=1" out.mov
 
 ## Cut videos
 ffmpeg -ss 00:01:00 -i video.mp4 -to 00:02:00 -c copy cut.mp4
+
 -to : until 
+
 or
+
 ffmpeg -ss 60 -i video.mp4 -t 60 -c copy cut.mp4 
+
 t : time
+
 ## concatenate
 for f in *.mp4 ; do echo file \'$f\' >> fileList.txt;
+
 ffmpeg -f concat -safe 0 -i fileList.txt -c copy mergedVideo.mp4
 
 ## combine video and audio
