@@ -35,7 +35,7 @@ Attention à l'option copy (sans réencodage)
 
 ## combine video and audio
 
-ffmpeg -i INPUT_FILE.mp4 -i AUDIO.wav -c:v copy -c:a aac OUTPUT_FILE.mp4
+ffmpeg -i INPUT_FILE.mp4 -i AUDIO.mp3 -c copy -map 0:v:0 -map 1:a:0 OUTPUT_FILE.mp4
 
 ## youtubedl extract mp3
 
