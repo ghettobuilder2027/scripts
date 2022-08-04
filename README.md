@@ -25,7 +25,7 @@ ffmpeg -ss 60 -i video.mp4 -t 60 -c copy cut.mp4
 
 t : time
 
-## concatenate
+## concatenate (marche pas bien)
 for f in $(ls bat_*); do echo file \'$f\' >> files.txt;done
 
 ffmpeg -f concat -safe 0 -i files.txt -c copy mergedVideo.mp4
@@ -36,6 +36,10 @@ Attention à l'option copy (sans réencodage)
 ## combine video and audio
 
 ffmpeg -i INPUT_FILE.mp4 -i AUDIO.mp3 -c copy -map 0:v:0 -map 1:a:0 OUTPUT_FILE.mp4
+
+## Extract image from video
+ffmpeg -ss 00:00:04 -i input.mp4 -frames:v 1 screenshot.png
+
 
 ## youtubedl extract mp3
 
