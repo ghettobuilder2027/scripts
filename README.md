@@ -35,7 +35,7 @@ Attention à l'option copy (sans réencodage)
 
 ## combine video and audio
 
-ffmpeg -i INPUT_FILE.mp4 -i AUDIO.mp3 -c copy -map 0\:v:0 -map 1\:a:0 OUTPUT_FILE.mp4
+ffmpeg -i INPUT_FILE.mp4 -i AUDIO.mp3 -c copy -map 0\:v\:0 -map 1\:a\:0 OUTPUT_FILE.mp4
 
 ## Extract image from video
 ffmpeg -ss 00:00:04 -i input.mp4 -frames:v 1 screenshot.png
