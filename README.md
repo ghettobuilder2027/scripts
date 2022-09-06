@@ -1,5 +1,10 @@
 # scripts pour la vie quotidienne
 
+## Arduino USB0 
+
+curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules | sudo tee /etc/udev/rules.d/99-platformio-udev.rules > /dev/null
+sudo apt-get install python3-serial
+
 ## Batch convert video to mp3 
 
 for i in *.mp4; do ffmpeg -i "$i" -b:a 32K -vn "${i%.*}.mp3"; done
