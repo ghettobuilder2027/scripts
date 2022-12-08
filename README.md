@@ -45,6 +45,8 @@ ffmpeg -i INPUT_FILE.mp4 -i AUDIO.mp3 -c copy -map 0\:v\:0 -map 1\:a\:0 OUTPUT_F
 ## Extract image from video
 ffmpeg -ss 00:00:04 -i input.mp4 -frames:v 1 screenshot.png
 
+## Add subtitles 
+ffmpeg -i input.mp4 -vf subtitles=subtitle.srt output_srt.mp4
 
 ## youtubedl extract mp3
 
