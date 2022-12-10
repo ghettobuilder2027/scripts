@@ -49,6 +49,8 @@ ffmpeg -ss 00:00:04 -i input.mp4 -frames:v 1 screenshot.png
 ffmpeg -i input.mp4 -vf subtitles=subtitle.srt output_srt.mp4
 
 ## youtubedl extract mp3
+#!/bin/bash
+youtube-dl --extract-audio --audio-format mp3 $1
 
 youtube-dl --extract-audio --audio-format mp3 <video URL>
   
