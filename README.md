@@ -28,6 +28,11 @@ or
 
 ffmpeg -ss 60 -i video.mp4 -t 60 -c copy cut.mp4 
 
+
+## extract audio
+
+ffmpeg -i sample.avi -q:a 0 -map a sample.mp3
+
 t : time
 
 ## concatenate (marche pas bien)
