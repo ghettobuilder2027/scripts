@@ -27,13 +27,13 @@ ffmpeg -ss 00:01:00 -i video.mp4 -to 00:02:00 -c copy cut.mp4
 or
 
 ffmpeg -ss 60 -i video.mp4 -t 60 -c copy cut.mp4 
-
+t : time
 
 ## extract audio
 
 ffmpeg -i sample.avi -q:a 0 -map a sample.mp3
 
-t : time
+
 
 ## concatenate (marche pas bien)
 for f in $(ls bat_*); do echo file \'$f\' >> files.txt;done
